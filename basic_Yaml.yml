@@ -1,0 +1,152 @@
+#Key value pairs 
+
+"name" : Aniket divear"
+ 1     :rollnumber is one 
+
+--- 
+#Lists 
+- apple 
+- mango 
+- banana
+- Apple 
+---
+   cities:
+    - pune 
+    - mumbai 
+    - kaka 
+--- 
+
+cities:[pune,mumbai,pune]
+--- 
+{mango:"yellow fruit" ,age:56 }
+
+---
+# multiline commets 
+# multiline 
+
+# datatypes 
+#string 
+myself:aniket 
+job:"developer"
+
+--- 
+#for multiple lines 
+
+bio :|
+aniket 
+divek
+
+--- 
+# write a single line in  multiple lines  
+#messages: >
+#this will 
+number:  34434
+float :  34.34
+aniket: no
+anikett: yes 
+
+#specify the datatype 
+zero : !!int 0
+positiveNumber : !!int 45
+negativeNumber :  !!int 34 
+binaryNumber   : !!int 02
+octalNum       : !!int 0 
+hexadecimal    : !!int 0x45
+
+---
+# float 
+marks  : !!float 3434.344
+infinite : !!float .inf
+not a num : .nan 
+--- 
+# boolean   
+booleanValue :!!bool No
+---
+# string 
+
+name :  "aniket"
+~ : this is  the null key 
+## dates 
+--- 
+date: $today()
+---
+#exponential numbers 
+exponential numbers:6.023E
+--- 
+
+###advanced data  types.yaml 
+#list 
+student: 
+  - marks
+  - name 
+  - div 
+# like this also
+cities : ["aniket","divekar"]
+
+# some of keys will be empty this will knows as parse sequence 
+sparse seq:
+ - hey 
+ - hi 
+ - how are you 
+ - 
+ - null 
+
+---
+# sub items or nested swquence 
+- mango 
+- apple 
+- banana 
+-
+ - marks
+ - roll_num 
+ - date 
+---
+## nested map (map within map ) 
+name: "aniket"
+role:
+    age : 45
+    job : "Developer"
+# same as 
+namee : 'aniket'
+rolee:{age : 445, job :"developer"}
+#pairs keys may have duplicate  values 
+---
+pair_example : 
+ - job :student 
+ - job :teacher
+ # this  will  be  hashtable cantaining arrays 
+--- 
+
+# !! set for unique values 
+names : 
+? Kunal 
+? Apoorv 
+? Rahul 
+
+##dictionary  !! omap  
+People : 
+  -  aniket :
+      - name :'aniket'
+      - age  : 78 
+  - Rahul :
+    - name : 'aniket divekar'
+    - age  : 45 
+---
+# reusing the some properties 
+linkings :  &likes
+   fav_fruits: mango
+   dislike :  grapes 
+aniket:
+<<: *likes
+--- 
+
+  
+
+
+
+
+
+
+
+
+
